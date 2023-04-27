@@ -1,15 +1,11 @@
-ي 0 1 و دو خروجي باينري y , y 0 1 ميخواهيم مدار ترتيبي سنكرون با دو ورودي x , x
-كنيم كه مشخصات ذيل را داشته باشد. 
-را در دو كلاك متوالي تست كند (هم پوشاني وجود دارد) ، اگر 0 1 وروديهاي x , x
- شود و سپس به اندازه ٥ كلاك صبر كند، و مجددا 0 1 الف- مقدار آنها در دو كلاك متوالي 00 بود، خروجي آن  11 y y
- بماند كه نشان 0 1 را تست كند، اگر مقدار آن دوباره در دو كلاك متوالي 00 شد، خروجي آن  11 y y 0 1 وروديهاي x , x
-دهنده آرامش در ميدان جنگ يا عدم جنگيدن يا صلح است. 
-ب- مقدار آنها در دو كلاك متوالي 01 بود، خروجي آن  0 1 10 y y شودو سپس به اندازه ٥ كلاك صبر كند، و مجددا وروديهاي 
- بماند كه نشان از آمادهباش 0 1 را تست كند، اگر مقدار آن دوباره در دو كلاك متوالي 01 شد، خروجي آن  10 y y 0 1 x , x
-براي جنگ است. 
-پ- مقدار آنها در دو كلاك متوالي 10 بود، خروجي آن  0 1 01 y y شودو سپس به اندازه ٥ كلاك صبر كند، و مجددا وروديهاي 
-را تست كند، اگر مقدار آن دوباره در دو كلاك متوال 10 شد، خروجي آن  01 y y 0 1 ي x , x
-بماند كه نشان از شروع جنگ 0 1
-با سلاح معمولي است. 
-ت- مقدار آنها در دو كلاك متوالي 11 بود، خروجي آن  0 1 00 y y شود كه نشان از جنگ با سلاحهاي خاص است. 
-فركانس كلاك يك هرتز است. 
+We want to design a sequential synchronous circuit with two binary inputs, x and x, and two binary outputs, y and y. The circuit should have the following specifications:
+
+A. If the input values of x and x are 01, and then the circuit waits for 5 clocks (overlapping is allowed), and the values become 00 in two consecutive clocks, the output should be 11yy. This indicates a test for peace or not going to war in the battlefield.
+
+B. If the values of x and x are 01 in two consecutive clocks, the output should be 01yy. The circuit should then wait for 5 clocks, and if the values of x and x remain the same, the output should be 10yy, indicating readiness for war without using conventional weapons.
+
+C. If the values of x and x are 10 in two consecutive clocks, the output should be 01yy. The circuit should then wait for 5 clocks, and if the values of x and x remain the same, the output should be 10yy, indicating the start of a war with conventional weapons.
+
+D. If the values of x and x are 11 in two consecutive clocks, the output should be 00yy, indicating a war with special weapons.
+
+The clock frequency is 1Hz.
